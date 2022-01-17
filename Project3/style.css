@@ -1,0 +1,148 @@
+/* Global view - Desktop */
+
+body {
+    font-family: 'Asap', sans-serif;
+    color: white;
+    background-color: #EBEBEB;
+}
+
+.header-container {
+    background-color: rgb(60, 60, 60);
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+}
+
+header {
+    max-width: 1024px;
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.button {
+    padding: 10px 25px;
+    border: 1px solid;
+    margin-left: 20px;
+}
+
+.container {
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 140px;
+}
+
+.col {
+    background-color: rgb(43, 226, 147);
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+}
+
+.col p {
+    font-size: 0.875rem;
+    padding: 20px 30px;
+    line-height: 1.25rem;
+}
+
+.col p::first-line {
+    font-weight: bold;
+}
+
+.desktop {
+    display: none;
+}
+
+.mob-wrapper {
+    display: none;
+}
+
+
+
+/* Tablet view */
+@media (max-width: 768px) {
+    
+    .col {
+        width: 45%;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .header-container {
+        position: relative;
+    }
+    
+    nav {
+        display: none;
+    }
+
+    nav a{
+        display: block;
+    }
+
+    .logo {
+        padding: 40px 0;
+    }
+
+    .button {
+        margin-left: 0;
+    }
+
+    .container {
+        padding-top: 40px;
+    }
+
+    .mob-wrapper {
+        display: block;
+        padding-right: 30px;
+    }
+
+    .mob-nav {
+        display: none;
+        position: absolute;
+        padding-top: 10px;
+    }
+
+    .mobbutton {
+        display: block;
+        background-color: blueviolet;
+        padding: 15px 30px;
+        margin-left: -70px;
+        text-align: center;
+    }
+
+}
+
+/* Mobile view */
+@media (max-width: 500px) {
+    
+    .col {
+        width: 100%;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+}
